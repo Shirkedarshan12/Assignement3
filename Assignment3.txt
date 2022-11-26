@@ -1,0 +1,108 @@
+# Q1. What is the purpose of Python&#39;s OOP?
+# In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc. in the programming.
+
+# Q2. Where does an inheritance search look for an attribute?
+
+# Q3. How do you distinguish between a class object and an instance object?
+# By using class object we can access & change the value of class attributes & this value is global for all class
+# By using instance object we can access & change the value of instance attributes but this not global for all attributes this is only applicable for that particular instance attributes
+
+# Q4  What makes the first argument in a class’s method function special?
+# The first parameter in the class method is the class on which you are calling the method, not (necessarily) the class that defines the method. (Having a variable that always holds the same class would probably not be that useful.)
+ 
+# Q5. What is the purpose of the __init__ method?
+# "__init__" is a reseved method in python classes. It is called as a constructor in object oriented terminology. This method is called when an object is created from a class and it allows the class to initialize the attributes of the class.
+
+# Q6. What is the process for creating a class instance?
+#  Objectname = Classname()
+
+# Q7. What is the process for creating a class?
+# Use keyword class, followed by a space, the name of the class, and a colon.
+#  class Classname():
+
+# 8. How would you define the superclasses of a class?
+# A superclass is the class from which many subclasses can be created. The subclasses inherit the characteristics of a superclass. The superclass is also known as the parent class or base class
+# by using superclass we can intialize the constructor of base class into child class we are calling base class constructor & passing that value
+# super().__init__(emp_name)
+
+# Q9. What is the relationship between classes and modules?
+#  Module introduces the definition related to properties, events, variables and procedures of its members. Modules cannot be instantiated like classes.
+# In many of the programming languages, classes and modules play a vital role. Classes are often considered as the blueprint of objects.
+
+# Q10. How do you make instances and classes?
+# for instance = ObjectName=Class()
+# for class = class Classname():
+
+
+# Q11. Where and how should be class attributes created in python?
+# A class attribute is shared by all instances of the class. To define a class attribute, you place it after the creation of class
+#  ex- class Class_name:
+    #  company="google"  (its class attribute)
+
+# Q12. Where and how are instance attributes created?
+#  Individual instance attributes are defined after the class attributes, and they are unique to each instance.
+# class student:
+    # def __init__(self, name, std, roll_no):
+    #     self.nm = name
+    #     self.std = std
+    #     self.rl_no = roll_no
+
+#  Q13. What does the term "self" in a Python class mean?
+#  self refer to the instance of the class its automatically passed witha function call from an object
+
+
+# Q18. Describe three applications for exception processing.
+# Error handling: The exceptions get raised whenever Python detects an error in a program at runtime. ...
+# Event Notification: Exceptions are also used to signal suitable conditions & then passing result flags around a program and text them explicitly.
+# Terminate Execution: There may arise some problems or errors in programs that it needs a termination. 
+
+# Q19. What happens if you don't do something extra to treat an exception?
+# In Python, Built-in exceptions can be raised when a program encounters an error. When these exceptions happen, the Python interpreter holds the current process and passes it to the calling process until it is handled. If not handled, the program will crash.
+
+# Q20. What are your options for recovering from an exception in your script?
+# try/except: catch the error and recover from exceptions hoist by programmers or Python itself.
+# try/finally: Whether exception occurs or not, it automatically performs the clean-up action.
+
+
+# Q21. Describe two methods for triggering exceptions in your script.
+# The try and except block in Python is used to catch and handle exceptions. Python executes code following the try statement as a “normal” part of the program. The code that follows the except statement is the program’s response to any exceptions in the preceding try clause.
+#     try:
+#       run the code
+#     except:
+#         Execute the code when there is an exception
+
+# Q23. What is the purpose of the try statement?
+# The try block is used to check some code for errors i.e the code inside the try block will execute when there is no error in the program. Whereas the code inside the except block will execute whenever the program encounters some error in the preceding try block.
+
+# Q30. What are Lambda Functions?
+# A Lambda Function in Python programming is an anonymous function or a function having no name. It is a small and restricted function having no more than one line. Just like a normal function, a Lambda function can have multiple arguments with one expression.
+
+# Q31. Explain Inheritance in Python with an example?
+# Inheritance is a way of creating a new class  from an existing class
+
+# class Person: 
+#     country="india"
+
+#     def personDetails(self):
+#         print("im a person")
+    
+#     def personSalary(self):
+#         print("My salary is 30 k")
+
+# class Employee(Person):
+
+#     def personDetails(self):
+#         print("Im a employee")
+
+# p=Person()
+# e=Employee()
+# e.personDetails()
+# e.personSalary()
+
+
+# Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of class C, which version gets invoked?
+# class A will get invoked
+
+
+# Q35. What is the global keyword?
+# Global keyword is used to modify the variable outside of the current scope
